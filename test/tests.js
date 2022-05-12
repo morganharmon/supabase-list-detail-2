@@ -1,7 +1,6 @@
 import './example.test.js';
 import { renderJuice } from '../render-utils.js';
 import { renderDetails } from '../render-utils.js';
-import { fetchItemDataById } from '../fetch-utils.js';
 
 const test = QUnit.test;
 
