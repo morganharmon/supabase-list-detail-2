@@ -9,6 +9,5 @@ export async function fetchAllData() {
 
 export async function fetchItemDataById(id) {
     const juice = await client.from('juices').select('*').match({ id: id }).single();
-    console.log(juice);
     return juice.data;
 }
