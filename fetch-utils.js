@@ -4,6 +4,11 @@ const client = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
 export async function fetchAllData() {
     const juices = await client.from('juices').select('*');
-    console.log(juices);
     return juices.data;
+}
+
+export async function fetchItemDataById(id) {
+    const juice = await client.from('juices').select('*').match({ id: id }).single();
+    console.log(juice);
+    return juice.data;
 }
