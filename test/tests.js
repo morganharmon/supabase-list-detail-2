@@ -11,7 +11,7 @@ test('renderJuice should output a div with an item name, image, and hyperlink', 
 });
 
 test('renderDetails should output a div with an item name, image, and additional info', (expect) => {
-    const expected = '<div><h2>Apple juice</h2><img src="./assets/apple-juice.jpg" alt="Apple juice"><p>Apple juice is brown and is full of vitamin B6.</p></div>';
+    const expected = '<div><h2>Apple juice info!</h2><img src="./assets/apple-juice.jpg" alt="Apple juice"><p>Apple juice is brown and is full of vitamin B6.</p></div>';
     const actual = renderDetails({ id: 2, type: 'Apple', color: 'brown', vitamins: 'vitamin B6', image: './assets/apple-juice.jpg' });
     expect.equal(actual.outerHTML, expected);
 });
