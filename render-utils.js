@@ -20,7 +20,7 @@ export function renderDetails(juice) {
     const p = document.createElement('p');
     const img = document.createElement('img');
 
-    h2.textContent = juice.type + ' juice';
+    h2.textContent = juice.type + ' juice info!';
     img.src = juice.image;
     img.alt = `${juice.type} juice`;
     p.textContent = `${juice.type} juice is ${juice.color} and is full of ${juice.vitamins}.`;
