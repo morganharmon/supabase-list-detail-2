@@ -1,8 +1,15 @@
 // import functions and grab DOM elements
-
+import { fetchAllData } from './fetch-utils.js';
+import { renderJuice } from './render-utils.js';
 // let state
+const juiceSection = document.getElementById('juiceSection');
 
-// set event listeners 
-  // get user input
-  // use user input to update state 
-  // update DOM to reflect the new state
+async function loadData() {
+    const juices = await fetchAllData();
+    for (let juice of juices) {
+        const div = renderJuice(juice);
+        juiceSection.append(div);
+    }
+}
+
+loadData();

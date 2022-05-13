@@ -2,11 +2,11 @@
 body {
     /* feel free to update these css variables for a quick theme */
     
-    --color1: white;
-    --color2: white;
-    --color3: white;
-    --color4: white;
-    --color5: white;
+    --color1: #803c0bff;
+    --color3: #7e9624ff;
+    --color2: #f9c66eff;
+    --color4: #e8edf1ff;
+    --color5: #57965dff;
     
     /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
         
@@ -46,8 +46,7 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: var(--gutter);
-    padding-bottom: var(--gutter);
+    padding: var(--gutter);
     margin-top: var(--gutter);
     margin-bottom: var(--gutter);
     border: solid 2px var(--color1);
@@ -55,7 +54,7 @@ section {
 
 header {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     background-color: var(--color3);
     height: var(--header-height);
     box-shadow: var(--shadow);
@@ -77,6 +76,7 @@ header img {
 
 p {
     margin: var(--gutter);
+    font-size: 1.5rem;
 }
   
 footer {
